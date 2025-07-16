@@ -26,7 +26,9 @@
     
     <!-- CSS -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{ asset('css/quinceanos.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <script src="{{ asset('js/app.js') }}"></script>
+
     
     <!-- Additional Styles -->
     @stack('styles')
