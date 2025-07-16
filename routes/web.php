@@ -39,11 +39,12 @@ Route::prefix('admin')->group(function () {
         return $controller->index();
     })->name('admin.rsvp.index');
     
-    Route::delete('/rsvp/{id}', function ($id) {
+    Route::match(['delete'], '/rsvp/{id}', function ($id) {
         if (!session('admin_logged_in')) {
             return redirect()->route('admin.login');
         }
         $controller = new RsvpController();
         return $controller->destroy($id);
     })->name('admin.rsvp.destroy');
+    
 });
