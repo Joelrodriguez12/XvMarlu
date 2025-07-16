@@ -8,7 +8,7 @@
     
     <!-- Meta tags for social sharing -->
     <meta property="og:title" content="Mis XV Años - Marlu">
-    <meta property="og:description" content="Te invito a celebrar conmigo este momento tan especial. 15 de Agosto 2025">
+    <meta property="og:description" content="Te invito a celebrar conmigo este momento tan especial. 2 de Agosto 2025">
     <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="website">
