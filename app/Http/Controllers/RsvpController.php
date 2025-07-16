@@ -25,7 +25,7 @@ class RsvpController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'phone' => 'required|string|max:20',
+            'phone' => 'nullable|string|max:10',
             'guests' => 'required|integer|min:1|max:10',
             'message' => 'nullable|string|max:500'
         ]);
