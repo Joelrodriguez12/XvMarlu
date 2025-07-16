@@ -146,7 +146,7 @@
                 @enderror
             </div>
             <div class="form-group">
-                <input type="tel" name="phone" placeholder="Teléfono" value="{{ old('phone') }}">
+                <input type="tel" name="phone" placeholder="Teléfono" required value="{{ old('phone') }}">
                 @error('phone')
                     <span class="error-message">{{ $message }}</span>
                 @enderror
